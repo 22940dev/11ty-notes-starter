@@ -1,0 +1,24 @@
+{
+  "name": "note-management-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "shadowtime2000",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@mightyplow/eleventy-plugin-cache-buster": "^1.1.3",
+    "dotenv": "^8.2.0",
+    "html-minifier": "^4.0.0"
+  },
+  "dependencies": {
+    "halfmoon": "^1.1.1"
+  }
+}

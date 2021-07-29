@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism-dark.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet">
+    
+    <meta name="monetization" content="{{ env.PAYMENT_POINTER }}">
+    <meta name="author" content="{{ env.AUTHOR }}">
+    <meta name="description" content="{{ description }}">
+    <meta name="copyright" content="{{ env.COPYRIGHT }}">
+    <meta name="robots" content="index, follow">
+    <meta name="msvalidate.01" content="{{ env.BING_WEBMASTER }}">
+  </head>
+
+  <body data-set-preferred-mode-onload="true">
+    <div class="page-wrapper with-navbar with-navbar-fixed-bottom">
+        {% include components/nav-top.liquid %}
+        <div class="content-wrapper">
+          <div class="container">
+            {{ content | safe }}
+          </div>
+        </div>
+        {% include components/nav-bottom.liquid %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.js"></script>
+  </body>
+</html>
