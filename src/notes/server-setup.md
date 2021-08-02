@@ -1,3 +1,8 @@
+---
+title: Server-Setup
+keywords: ["notes", "server", "setup", "github"]
+description: Setting up server with GitHub
+---
 
 
 # Clone your Project
